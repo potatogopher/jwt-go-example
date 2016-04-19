@@ -16,7 +16,7 @@ $ cd jwt-go-example
 
 ## Create Private & Public Keys
 ```
-$ openssla rsa -in demo.rsa -pubout > demo.rsa.pub
+$ openssl genrsa -out demo.rsa
 $ openssl rsa -in demo.rsa -pubout > demo.rsa.pub
 ```
 
