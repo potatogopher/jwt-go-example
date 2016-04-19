@@ -25,7 +25,7 @@ $ openssl rsa -in demo.rsa -pubout > demo.rsa.pub
 $ curl localhost:3000/login
 // returns JWT
 
-$ curl -H <JWT> localhost:3000/api
+$ curl -H "Authorization: Bearer <JWT>" localhost:3000/api
 // if valid: returns Success
 // else: error
 ```
